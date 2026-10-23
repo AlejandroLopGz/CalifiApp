@@ -89,6 +89,12 @@ def opcion_reporte():
     print("-" * 50)
     print("Promedio grupal:", promedio_grupal(promedios))
 
+    print("-" * 50)
+    print("Promedio grupal:", promedio_grupal(promedios))
+    print("Total de alumnos en el reporte:", len(promedios))
+
+
+
 
 # ==============================================================
 #  Menú principal

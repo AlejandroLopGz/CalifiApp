@@ -6,9 +6,13 @@ MINIMA_APROBATORIA = 6
 
 
 # HU-01 Registrar alumnos
+def nombre_repetido(alumnos, nombre):
+    return nombre.strip() in alumnos
+
+
 def registrar_alumno(alumnos, nombre):
     nombre = nombre.strip()
-    if nombre == "" or len(alumnos) >= LIMITE_ALUMNOS:
+    if nombre == "" or len(alumnos) >= LIMITE_ALUMNOS or nombre_repetido(alumnos, nombre):
         return False
     alumnos.append(nombre)
     return True
